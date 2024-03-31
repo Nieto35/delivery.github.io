@@ -5,8 +5,12 @@ import { CardDesktop } from '@/components/CardDesktop'
 import {ScrollToTopButton} from '@/components/buttonUp'
 import { HowBuy } from '@/components/howBuy'
 import { Info } from '@/components/info'
+import { News } from '@/components/news'
+import { NewsDesktop } from '@/components/newsDesktop'
+
 
 export default function Home() {
+
   return (
     <>
       <div className="flex flex-col h-screen">
@@ -25,6 +29,16 @@ export default function Home() {
       <Info/>
       
       <HowBuy/>
+
+      <div className='lg:hidden'>
+
+        <News/>
+      </div>
+
+      <div className='hidden lg:block'>
+        <NewsDesktop/>
+      </div>
+      
     </>
   )
 }

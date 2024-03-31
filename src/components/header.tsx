@@ -3,7 +3,7 @@ export const Header = () => {
     <div className="relative flex-grow h-full lg:flex lg:justify-center lg:items-center">
       <img
         src="/head_image.jpg"
-        alt="lvda logo"
+        alt="placita logo"
         className="absolute inset-0 h-full w-full object-cover"
         loading="lazy"
       />

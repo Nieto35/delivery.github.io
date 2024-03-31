@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { DrawnXLogo } from './drawnXLogo'
 import { HamburgerButton } from './hamburgerButton'
 import React, { useEffect, useState } from 'react'
+import SEO from './SEO'
 
 export const Navbar = () => {
   const pathname = usePathname()
@@ -34,6 +35,7 @@ export const Navbar = () => {
 
   return (
     <header className="mb-1 h-16 max-w-[100vw] lg:h-24">
+      <SEO canonical='https://laplacitadelivery.com/' title="La Placita Delivery" description="Web Oficial de La Placita delivery, tienda de mercados campesinos." image='/LOGO-PLACITA-WEB.jpg' />
       <nav className="group flex h-full w-full items-center justify-between px-10 lg:justify-center">
       {
         pages.map(({ name, href, active }, key) => (
@@ -74,7 +76,7 @@ export const Navbar = () => {
           <nav className="flex w-full flex-col items-center gap-5">
             <img
               src="/name-without-bg.png"
-              alt="lvda logo"
+              alt="la placita logo"
               className="accent-drop-shadow my-4 max-w-60 drop-shadow-lg"
               loading="lazy"
             />
@@ -85,9 +87,8 @@ export const Navbar = () => {
               }}
             />
             {pages.map(({  name, href, active }, key) => (
-              <>
+              <React.Fragment key={key}>
                 <a
-                  key={key}
                   href={href}
                   className={
                     'relative flex flex-col items-center justify-center gap-2 text-xl capitalize'
@@ -104,7 +105,7 @@ export const Navbar = () => {
                       'linear-gradient(to right, transparent 0%, #7f8f61 50%, transparent 100%)'
                   }}
                 />
-              </>
+              </React.Fragment>
             ))}
           </nav>
         </div>

@@ -7,6 +7,7 @@ export const DrawnXLogo = () => {
 	aria-label="Isotipo dibujado de La Velada 4"
     className="w-10"
 	src="/logo-cafe.png"
+    alt="logo la placita delivery"
 />
     )
 }
