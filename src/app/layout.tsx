@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/x-icon" href="/delivery1.ico" />
       </head>
+      
       <body className={inter.className}>{children}</body>
     </html>
   );

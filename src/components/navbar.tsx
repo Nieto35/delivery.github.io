@@ -4,16 +4,17 @@ import styles from './Navbar.module.css'
 import { usePathname } from 'next/navigation'
 import { DrawnXLogo } from './drawnXLogo'
 import { HamburgerButton } from './hamburgerButton'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export const Navbar = () => {
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false);
 
   const pages = [
-    { name: 'Nosotros', href: '/nosotros' },
+    {name: 'Home', href: '/'},
     { name: 'Combos', href: '/combos' },
-    { name: 'Contacto', href: '/contacto'}
+    { name: 'Contacto', href: '/contacto'},
+    { name: 'Nosotros', href: '/nosotros' }
   ].map((page) => ({
     ...page,
     active: pathname === page.href
@@ -34,6 +35,25 @@ export const Navbar = () => {
   return (
     <header className="mb-1 h-16 max-w-[100vw] lg:h-24">
       <nav className="group flex h-full w-full items-center justify-between px-10 lg:justify-center">
+      {
+        pages.map(({ name, href, active }, key) => (
+          <React.Fragment key={key}>
+            <a
+              key={key}
+              href={href}
+              className={`current-page nav-item relative hidden h-full select-none flex-col items-center justify-center gap-1 text-center text-xl uppercase lg:flex lg:px-7 xl:px-10 ${!active ? 'text-secondary' : 'text-green-300 '} relative overflow-hidden`}
+        
+            >
+              {active && <div className="absolute top-0 left-0 w-full border-t-8 border-green-300"></div>}
+              <span className='font-bold text-xl'>{name}</span>
+              <div className="absolute inset-0 bg-gradient-to-b from-green-300 to-transparent transition-opacity duration-800 ease-in-out opacity-0 hover:opacity-100 current-page">
+                
+              </div>
+            </a>
+            {key === 1 && <div className="hidden w-64 lg:block" />}
+          </React.Fragment>
+        ))
+      }
         <a href="/" className="block lg:hidden">
           <DrawnXLogo />
         </a>
@@ -64,17 +84,18 @@ export const Navbar = () => {
                 background: 'linear-gradient(to right, transparent 0%, #7f8f61 50%, transparent 100%)'
               }}
             />
-            {pages.map(({  name, href, }, key) => (
+            {pages.map(({  name, href, active }, key) => (
               <>
                 <a
+                  key={key}
                   href={href}
                   className={
                     'relative flex flex-col items-center justify-center gap-2 text-xl capitalize'
                   }
-                  id={`navmob-link-${key}`}
+                 
                 >
-                  <span className="z-10 uppercase text-primary">{name}</span>
-                  
+                  <span className="relative z-10 uppercase text-secondary">{name}</span>
+                  {active && <div className="absolute -left-5 h-3 w-3 bg-green-300 rounded-full mr-2"></div>}
                 </a>
                 <hr
                   className="h-[2px] w-full border-t-0"
@@ -85,10 +106,6 @@ export const Navbar = () => {
                 />
               </>
             ))}
-            {/* <nav className="my-4 flex flex-col gap-10">
-              <FooterContent />
-              <SocialButtons class="flex items-center justify-center" />
-            </nav> */}
           </nav>
         </div>
       </nav>

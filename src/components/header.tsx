@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className="relative flex-grow h-full">
+    <div className="relative flex-grow h-full lg:flex lg:justify-center lg:items-center">
       <img
         src="/head_image.jpg"
         alt="lvda logo"
@@ -9,11 +9,11 @@ export const Header = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-80"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-20"></div>
-      <div className="absolute inset-0 text-center z-10 max-w-80 top-8 left-0 right-0 mx-auto h-[200px]">
-        <h1 className="text-white text-3xl font-black leading-none mb-4 mt-4">
+      <div className="absolute inset-0 text-center z-10 max-w-80 top-8 left-0 right-0 mx-auto h-[200px] lg:relative lg:max-w-4xl">
+        <h1 className="text-white text-3xl font-black leading-none mb-4 mt-4 lg:text-7xl lg:mt-0">
           Mercados campesinos
         </h1>
-        <p className="text-white text-lg leading-tight">
+        <p className="text-white text-lg leading-tight lg:text-3xl">
           {' '}
           Trabajamos con agricultura tradicional campesina que está cuidando el planeta. Somos
           agroecología.

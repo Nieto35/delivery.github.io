@@ -1,6 +1,7 @@
-
 export const HeroLogo = () => {
     return (
-        <img src="/name-without-bg.png" className="bg-white relative z-10 rounded-b-3xl"></img>
-)
+        <div className="relative bg-white rounded-full p-2 flex items-center justify-center z-10 ">
+            <img src="/name-without-bg.png" className="relative z-10 w-full h-auto"></img>
+        </div>
+    )
 }

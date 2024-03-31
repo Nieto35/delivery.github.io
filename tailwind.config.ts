@@ -12,6 +12,7 @@ const config: Config = {
         'background-color': 'white',
         'my-green-color': '#7f8f61',
         'green-300': '#7f8f61',
+        'light-green-300': '#c5d6b3',
         'secondary': '#53180A'
       },
       backgroundImage: {
