@@ -1,1 +1,0 @@
-"use strict";exports.id=763,exports.ids=[763],exports.modules={4763:(e,t,r)=>{r.r(t),r.d(t,{$$typeof:()=>a,__esModule:()=>o,default:()=>d});let s=(0,r(6843).createProxy)(String.raw`C:\Users\JairoNieto\Documents\frontLaPlacita\delivery\src\components\CardDesktop.tsx`),{__esModule:o,$$typeof:a}=s,d=s.default}};
