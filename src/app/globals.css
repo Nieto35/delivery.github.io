@@ -35,13 +35,6 @@
   --my-green-color: 127, 143, 97;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  body {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 /* Anula el modo oscuro predeterminado del navegador */
 @media (prefers-color-scheme: light) {
