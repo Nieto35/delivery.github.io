@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/delivery1.ico" />
       </head>
       
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-white`}>{children}</body>
     </html>
   );
 }
