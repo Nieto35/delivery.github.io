@@ -5,13 +5,13 @@ import { useSwipeable } from 'react-swipeable'
 export default function News  () {
   const cards = [
     {
-      image: '/news/h13h.png',
+      image: '/delivery.github.io/news/h13h.png',
       title: 'h13h',
       link: "https://www.h13n.com/placita-delivery-un-espacio-para-emprendedores-y-campesinos/77318/",
       description: <p>Con el objetivo de apoyar la reactivación económica, se trabaja bajo el lema de Kilómetro cero.</p>
     },
     {
-      image: '/news/medellin.png',
+      image: '/delivery.github.io/news/medellin.png',
       title: 'Alcaldia medellin',
       link: "https://twitter.com/AlcaldiadeMed/status/1290999886276710400",
       description: <p>@laPlacitaDelivery apoya a productores rurales con la entrega de domicilios de manera sostenible.</p>

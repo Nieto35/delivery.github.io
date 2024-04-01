@@ -11,7 +11,7 @@ export default function Footer() {
                 role="img"
                 aria-label="Logo la placita delivery"
                 className="w-32"
-                src="logos/logo-blanco.png"
+                src="/delivery.github.io/logos/logo-blanco.png"
                 alt="logo la placita delivery"
                 />
             </div>
@@ -24,7 +24,7 @@ export default function Footer() {
                     role="img"
                     aria-label="Logo la placita delivery"
                     className="w-8 h-8 text-white"
-                    src="redes/facebook.svg"
+                    src="/delivery.github.io/redes/facebook.svg"
                     alt="logo la placita delivery"
                     />
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                     role="img"
                     aria-label="Logo la placita delivery"
                     className="w-8 h-8"
-                    src="redes/instagram.svg"
+                    src="/delivery.github.io/redes/instagram.svg"
                     alt="logo la placita delivery"
                     />
                 </a>
@@ -42,7 +42,7 @@ export default function Footer() {
                     role="img"
                     aria-label="Logo la placita delivery"
                     className="w-8 h-8"
-                    src="redes/tiktok.svg"
+                    src="/delivery.github.io/redes/tiktok.svg"
                     alt="logo la placita delivery"
                     />
                 </a>
@@ -74,9 +74,9 @@ export default function Footer() {
 
 
       <div className="px-5 flex justify-between pb-5 lg:items-center lg:px-28">
-        <img src="/apoyos/visitMedellin.png" alt="logo visit medellin" className="w-40 h-20" />
+        <img src="/delivery.github.io/apoyos/visitMedellin.png" alt="logo visit medellin" className="w-40 h-20" />
 
-        <img src="/apoyos/alcaldia-medellin.png" alt="logo visit medellin" className="w-40 h-20" />
+        <img src="/delivery.github.io/apoyos/alcaldia-medellin.png" alt="logo visit medellin" className="w-40 h-20" />
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 export default function Info () {
   return (
     <div className="mt-16 relative">
-      <img src="/page.png" alt="" className="w-full object-cover h-[390px] " />
+      <img src="/delivery.github.io/page.png" alt="" className="w-full object-cover h-[390px] " />
       <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-80"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
 
