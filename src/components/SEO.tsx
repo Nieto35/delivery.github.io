@@ -64,7 +64,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, image, canonical }) => {
       <meta name="msapplication-config" content="/browserconfig.xml" />
 
       {/* <script src="/registerSW.js"></script> */}
-      <link rel="manifest" href="/manifest.webmanifest" />
+      <link rel="manifest" href="/delivery.github.io/manifest.webmanifest" />
     </>
   );
 };
