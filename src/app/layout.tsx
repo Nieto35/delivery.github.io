@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/delivery.png',
+    icon: '/delivery.github.io/delivery.png',
   },
   title: "La Placita Delivery",
   description: "Mercado en línea para adquirir productos en combos, solo con productos locales que apoyan a los campesinos.",
@@ -21,10 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href="/delivery1.ico" />
+        <link rel="icon" type="image/x-icon" href="/delivery.github.io/delivery1.ico" />
       </head>
       
-      <body className={`${inter.className} bg-white`}>{children}</body>
+      <body className={`${inter.className} bg-white`} style="background-color: white !important;">{children}</body>
     </html>
   );
 }
