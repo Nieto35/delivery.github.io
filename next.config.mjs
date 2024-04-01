@@ -1,7 +1,8 @@
-import path from 'path'
-
 export default {
-  webpack: (config, { isServer }) => {
+  webpack: async (config, { isServer }) => {
+    // Importar el módulo path de forma dinámica
+    const path = await import('path')
+
     // Agregar la propiedad output a la configuración
     config.output = {
       // Aquí puedes especificar las opciones de output
