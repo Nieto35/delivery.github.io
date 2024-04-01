@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 
-export const ScrollToTopButton = () => {
+export default function ScrollToTopButton () {
     const buttonRef = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {

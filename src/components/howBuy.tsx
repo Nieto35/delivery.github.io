@@ -2,7 +2,7 @@ import { LuBeef } from "react-icons/lu";
 import { BsBox2 } from "react-icons/bs";
 import { BsHouseDoor } from "react-icons/bs";
 
-export const HowBuy = () => {
+export default function HowBuy() {
   return (
     <div className="">
       <h2 className='text-center text-green-300 text-3xl font-black leading-none mb-4 mt-24 lg:text-5xl'>

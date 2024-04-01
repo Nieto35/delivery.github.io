@@ -1,4 +1,4 @@
-export const Header = () => {
+export default function Header()  {
   return (
     <div className="relative flex-grow h-full lg:flex lg:justify-center lg:items-center">
       <img

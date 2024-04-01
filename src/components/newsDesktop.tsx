@@ -1,7 +1,7 @@
 
 
 
-export const NewsDesktop = () => {
+export default function NewsDesktop ()  {
   const cards = [
     {
       image: '/news/h13h.png',
@@ -22,7 +22,7 @@ export const NewsDesktop = () => {
 
   return (
     <div className="flex justify-center items-center mt-12">
-      <div className="w-4/5 border-y-2 border-green-300 py-14">
+      <div className="w-4/5 border-t-2 border-green-300 py-14">
         <div className="lg:flex lg:justify-center ">
           <div
             className="carousel lg:grid lg:grid-cols-2 lg:w-4/5"

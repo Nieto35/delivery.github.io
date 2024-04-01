@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 
-export const News = () => {
+export default function News  () {
   const cards = [
     {
       image: '/news/h13h.png',
@@ -38,7 +38,7 @@ export const News = () => {
 
   return (
     <div className="flex justify-center items-center mt-12">
-      <div className="w-4/5 border-y-2 border-green-300 py-14">
+      <div className="w-4/5 border-t-2 border-green-300 py-14">
         <div className="lg:flex lg:justify-center ">
           <div
             {...handlers}

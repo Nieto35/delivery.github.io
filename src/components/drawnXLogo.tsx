@@ -4,7 +4,7 @@ export const DrawnXLogo = () => {
     return (
 <img
 	role="img"
-	aria-label="Isotipo dibujado de La Velada 4"
+	aria-label="Logo la placita delivery"
     className="w-10"
 	src="/logo-cafe.png"
     alt="logo la placita delivery"

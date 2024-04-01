@@ -4,7 +4,7 @@ import { useSwipeable } from 'react-swipeable'
 import {ViewCard} from './viewCard'
 import {cards} from './infocards'
 
-export const CardDesktop = () => {
+export default function CardDesktop () {
     const [currentIndex, setCurrentIndex] = useState(0)
     
 

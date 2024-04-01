@@ -1,13 +1,16 @@
-import { Navbar } from '@/components/navbar'
-import { Header } from '@/components/header'
-import {Card} from '@/components/card'
-import { CardDesktop } from '@/components/CardDesktop'
-import {ScrollToTopButton} from '@/components/buttonUp'
-import { HowBuy } from '@/components/howBuy'
-import { Info } from '@/components/info'
-import { News } from '@/components/news'
-import { NewsDesktop } from '@/components/newsDesktop'
+import React from 'react'
 
+
+const Navbar = React.lazy(() => import('../components/navbar'));
+const Header = React.lazy(() => import('../components/header'));
+const Card = React.lazy(() => import('../components/card'));
+const CardDesktop = React.lazy(() => import('../components/CardDesktop'));
+const ScrollToTopButton = React.lazy(() => import('../components/buttonUp'));
+const HowBuy = React.lazy(() => import('../components/howBuy'));
+const Info = React.lazy(() => import('../components/info'));
+const News = React.lazy(() => import('../components/news'));
+const NewsDesktop = React.lazy(() => import('../components/newsDesktop'));
+const Footer = React.lazy(() => import('../components/footer'));
 
 export default function Home() {
 
@@ -38,7 +41,7 @@ export default function Home() {
       <div className='hidden lg:block'>
         <NewsDesktop/>
       </div>
-      
+      <Footer />
     </>
   )
 }

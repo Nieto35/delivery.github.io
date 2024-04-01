@@ -4,10 +4,10 @@ import styles from './Navbar.module.css'
 import { usePathname } from 'next/navigation'
 import { DrawnXLogo } from './drawnXLogo'
 import { HamburgerButton } from './hamburgerButton'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import SEO from './SEO'
 
-export const Navbar = () => {
+export default function Navbar()  {
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,15 +23,8 @@ export const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    document.body.classList.toggle('overflow-hidden');
-    document.body.classList.toggle('lg:overflow-auto');
   };
 
-  useEffect(() => {
-    if (isOpen) {
-      toggleMenu();
-    }
-  }, []);
 
   return (
     <header className="mb-1 h-16 max-w-[100vw] lg:h-24">
@@ -75,7 +68,7 @@ export const Navbar = () => {
           </div>
           <nav className="flex w-full flex-col items-center gap-5">
             <img
-              src="/name-without-bg.png"
+              src="/name-without-bg.webp"
               alt="la placita logo"
               className="accent-drop-shadow my-4 max-w-60 drop-shadow-lg"
               loading="lazy"

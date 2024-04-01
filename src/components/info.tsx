@@ -1,4 +1,4 @@
-export const Info = () => {
+export default function Info () {
   return (
     <div className="mt-16 relative">
       <img src="/page.png" alt="" className="w-full object-cover h-[390px] " />
