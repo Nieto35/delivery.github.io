@@ -1,3 +1,5 @@
+import path from 'path'
+
 export default {
   webpack: (config, { isServer }) => {
     // Agregar la propiedad output a la configuración
