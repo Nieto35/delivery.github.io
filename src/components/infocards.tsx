@@ -10,7 +10,7 @@ import { IoIosArrowForward } from 'react-icons/io'
 
 export const cards = [
   {
-    image: '/combos/familiares.jpg',
+    image: '/delivery.github.io/combos/familiares.jpg',
     title: 'Familiares',
     icon: <MdOutlineFamilyRestroom size={50} />,
     description: (
@@ -27,7 +27,7 @@ export const cards = [
     )
   },
   {
-    image: '/combos/asados.jpg',
+    image: '/delivery.github.io/combos/asados.jpg',
     title: 'Asados',
     icon: <GiHotMeal size={50} />,
     description: (
@@ -44,7 +44,7 @@ export const cards = [
     )
   },
   {
-    image: '/combos/carnes.jpg',
+    image: '/delivery.github.io/combos/carnes.jpg',
     title: 'Carnes',
     icon: <TbMeat size={50} />,
     description: (
@@ -65,7 +65,7 @@ export const cards = [
     )
   },
   {
-    image: '/combos/facilPreparar.png',
+    image: '/delivery.github.io/combos/facilPreparar.png',
     title: 'Practicos',
     icon: <PiBowlFood size={50} />,
     description: (
@@ -86,7 +86,7 @@ export const cards = [
     )
   },
   {
-    image: '/combos/saludable.webp',
+    image: '/delivery.github.io/combos/saludable.webp',
     title: 'Saludables',
     icon: <GiFruitBowl size={50} />,
     description: (
@@ -107,7 +107,7 @@ export const cards = [
     )
   },
   {
-    image: '/combos/solteroPareja.jpg',
+    image: '/delivery.github.io/combos/solteroPareja.jpg',
     title: 'Soltero o Pareja',
     icon: <TbFriends size={50} />,
     description: (

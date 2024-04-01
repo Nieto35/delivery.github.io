@@ -2,7 +2,7 @@ export default function Header()  {
   return (
     <div className="relative flex-grow h-full lg:flex lg:justify-center lg:items-center">
       <img
-        src="/head_image.jpg"
+        src="/delivery.github.io/head_image.jpg"
         alt="placita logo"
         className="absolute inset-0 h-full w-full object-cover"
         loading="lazy"
@@ -30,7 +30,7 @@ export default function Header()  {
       </a>
 
       <img
-        src="/resenas-google.png"
+        src="/delivery.github.io/resenas-google.png"
         alt="Google Rating"
         className="absolute bottom-2 left-1/2 transform -translate-x-1/2"
       />

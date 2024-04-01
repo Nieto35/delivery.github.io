@@ -68,7 +68,7 @@ export default function Navbar()  {
           </div>
           <nav className="flex w-full flex-col items-center gap-5">
             <img
-              src="/name-without-bg.webp"
+              src="/delivery.github.io/name-without-bg.webp"
               alt="la placita logo"
               className="accent-drop-shadow my-4 max-w-60 drop-shadow-lg"
               loading="lazy"
