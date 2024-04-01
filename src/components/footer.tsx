@@ -74,9 +74,9 @@ export default function Footer() {
 
 
       <div className="px-5 flex justify-between pb-5 lg:items-center lg:px-28">
-        <img src="/delivery.github.io/apoyos/visitMedellin.png" alt="logo visit medellin" className="w-40 h-20" />
+        <img src="/delivery.github.io/apoyos/visitMedellin.png" alt="logo visit medellin" className="w-40 h-16" />
 
-        <img src="/delivery.github.io/apoyos/alcaldia-medellin.png" alt="logo visit medellin" className="w-40 h-20" />
+        <img src="/delivery.github.io/apoyos/alcaldia-medellin.png" alt="logo visit medellin" className="w-40 h-16" />
       </div>
     </div>
   )
