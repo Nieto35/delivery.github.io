@@ -13,18 +13,20 @@ export const metadata: Metadata = {
   description: "Mercado en línea para adquirir productos en combos, solo con productos locales que apoyan a los campesinos.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const styleObject = { backgroundColor: 'white' };
   return (
     <html lang="en">
       <head>
         <link rel="icon" type="image/x-icon" href="/delivery.github.io/delivery1.ico" />
       </head>
       
-      <body className={`${inter.className} bg-white`} style="background-color: white !important;">{children}</body>
+      <body className={`${inter.className} bg-white`} style={styleObject}>{children}</body>
     </html>
   );
 }
