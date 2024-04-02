@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href="/delivery.github.io/delivery1.ico" />
+        <link rel="icon" type="image/x-icon" href="/delivery.github.io/delivery.ico" />
       </head>
       
       <body className={`${inter.className} bg-white`} style={styleObject}>{children}</body>
